@@ -1,0 +1,48 @@
+{
+  "name": "pi-claude-md-injector",
+  "version": "0.1.0",
+  "description": "pi extension that adds Claude Code-like CLAUDE.md discovery and @ import reminders.",
+  "private": true,
+  "type": "module",
+  "main": "claude-md-injector.ts",
+  "files": [
+    "claude-md-injector.ts",
+    "README.md",
+    "CHANGELOG.md",
+    "scripts/install.mjs"
+  ],
+  "scripts": {
+    "check": "tsc --noEmit",
+    "install:pi": "node scripts/install.mjs"
+  },
+  "keywords": [
+    "pi-package",
+    "pi",
+    "pi-coding-agent",
+    "extension",
+    "claude-md",
+    "claude-code"
+  ],
+  "pi": {
+    "extensions": [
+      "./claude-md-injector.ts"
+    ]
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hmmvot/pi-claude-md-injector.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hmmvot/pi-claude-md-injector/issues"
+  },
+  "homepage": "https://github.com/hmmvot/pi-claude-md-injector#readme",
+  "engines": {
+    "node": ">=20.6.0"
+  },
+  "devDependencies": {
+    "@earendil-works/pi-coding-agent": "^0.74.0",
+    "@types/node": "^24.3.0",
+    "typescript": "^5.7.3"
+  }
+}
